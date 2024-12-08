@@ -19,7 +19,7 @@ fn main() {
     tauri::Builder::default()
         .setup(|app| {
             let handle = app.handle();
-            let webview_window = handle.get_webview_window("main").expect("No 'main' window found");
+            let webview_window = handle.get_webview_window("messageDisplay").expect("lol");
 
             webview_window.set_decorations(false)?;
             webview_window.set_always_on_top(true)?;
