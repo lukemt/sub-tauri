@@ -1,7 +1,7 @@
 {
   "name": "sub-tauri",
   "private": true,
-  "version": "0.1.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,12 +10,15 @@
     "tauri": "tauri"
   },
   "dependencies": {
+    "@rollup/plugin-yaml": "^4.1.2",
     "@tauri-apps/api": "^2",
-    "@tauri-apps/plugin-shell": "^2"
+    "@tauri-apps/plugin-shell": "^2",
+    "@types/yaml": "^1.9.7",
+    "yaml": "^2.6.1"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^2",
-    "vite": "^5.3.1",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1"
   }
 }

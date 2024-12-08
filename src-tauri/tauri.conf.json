@@ -4,28 +4,30 @@
   "version": "0.1.0",
   "identifier": "com.sub-tauri.app",
   "build": {
-    "beforeDevCommand": "deno task dev",
+    "beforeDevCommand": "pnpm dev",
     "devUrl": "http://localhost:1420",
-    "beforeBuildCommand": "deno task build",
+    "beforeBuildCommand": "pnpm build",
     "frontendDist": "../dist"
   },
   "app": {
     "withGlobalTauri": true,
     "windows": [
       {
+        "label": "main",
         "title": "sub-tauri",
         "transparent": true,
         "decorations": false,
         "alwaysOnTop": true,
         "fullscreen": false,
-        "width": 400,
-        "height": 100,
+        "width": 600,
+        "height": 300,
         "resizable": false
       }
     ],
     "security": {
       "csp": null
-    }
+    },
+    "macOSPrivateApi": true
   },
   "bundle": {
     "active": true,
